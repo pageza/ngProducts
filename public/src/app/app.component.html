@@ -12,12 +12,7 @@
   </div>
 </div>
 <div>
-  <div><button (click)="getProductsFromService()">Get Products</button></div>
-<!--  <div *ngIf="products">-->
-<!--    <div  *ngFor="let item of products" class="center">-->
-<!--      <h3>{{item.name}}</h3>-->
-<!--      <button (click)="getOneProductFromService(item._id)">Show</button>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div><button [routerLink]="['/product']">Get Products</button> </div>
+
   <router-outlet></router-outlet>
 </div>
